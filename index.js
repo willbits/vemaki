@@ -19,7 +19,7 @@ app.use(morgan('combined'));
 
 //static files
 
-app.use(express.static(path.join(__dirname,'pub')));
+app.use(express.static(path.join(__dirname,'public')));
 
 //rutas
 
