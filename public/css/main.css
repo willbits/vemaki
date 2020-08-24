@@ -1,0 +1,359 @@
+@import url(style_oferta.css);
+@import url(style_footer.css);
+@import url(style_contact.css);
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px){
+	body{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	body{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	body{
+		font-size: 8px;
+	}
+}
+
+
+@media screen and (max-width: 400px){
+	body{
+		font-size: 5px;
+	}
+}
+
+@keyframes transmenu-color {
+    from {
+    	background-color: transparent;
+    }
+    to {
+    	background-color: #333;
+    }
+
+
+}
+
+@keyframes fontsize {
+    from {
+    	font-size: 1em;
+    }
+    to {
+    	font-size: 0.8em;
+    }
+}
+
+@keyframes heightsize {
+    from {
+    	height: 80px;    
+    }
+    to {
+    	height: 30px;
+    }
+}
+
+@keyframes rightfloat {
+    from {   
+    	float: right; 
+    }
+    to {
+    	float: none;
+    }
+}
+
+@keyframes leftfloat {
+    from {   
+    	float: left; 
+    }
+    to {
+    	float: none;
+    }
+}
+
+@keyframes floatright {
+    from {   
+    	float: none; 
+    }
+    to {
+    	float: right;
+    }
+}
+
+@keyframes floatleft {
+    from {   
+    	float: none; 
+    }
+    to {
+    	float: left;
+    }
+}
+
+
+@keyframes color-transmenu {
+    from {
+    	background-color: #333;
+    }
+    to {
+    	background-color: transparent;    	
+    }
+
+
+}
+
+@keyframes sizefont {
+    from {
+     	font-size: 0.8em;   	
+    }
+    to {
+    	font-size: 1em;
+    }
+}
+
+@keyframes sizeheight {
+    from {
+    	height: 30px;    
+    }
+    to {
+    	height: 80px;
+    }
+}
+body {
+	font-family: 'Comic Neue', 'Roboto', sans-serif;
+
+	background-color: #000; 
+}
+
+
+
+.nav {
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	display: table;
+	z-index: 100;
+
+}
+.cambiar_nav{
+	height: 30px;
+	width: 100%;
+	font-size: 0.8em;
+	position: fixed;
+	display: block;
+	background-color: #333;
+	animation: transmenu-color 0.2s, heightsize 0.5s, fontsize 0.5s;
+	color: #fff;
+	z-index: 100;
+}
+.cambiar_nav div{
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	height: 100%;
+	width: 10%;
+
+	line-height: 30px;
+	
+}
+
+.cambiar_nav a{
+	position: absolute;
+}
+
+
+
+.cambiar_nav #ico img{
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	margin-top: 2px; 
+}
+
+.cambiar_nav #instagram img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	margin-top: 4px; 
+}
+
+
+.nav_cambiar{
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	animation: color-transmenu 0.5s, sizeheight 0.5s, sizefont 0.5s;
+	display: table;
+	z-index: 100;
+}
+
+.nav_cambiar div{
+	text-align: center;
+	display: inline-block;
+	height: 100%;
+	width: 14%;
+	line-height: 80px;
+}
+
+.nav_cambiar a{
+	text-decoration: none;
+	color: #fff;
+	transition: color .2s;
+}
+
+
+.nav_cambiar a:hover{
+	transition: color .2s;
+	color: #ccc;
+}
+
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%
+}
+
+nav div{
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	height: 100%;
+	width: 14%;
+	line-height: 80px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	transition: color .2s;
+}
+
+
+nav a:hover{
+	transition: color .2s;
+	color: #ccc;
+}
+
+.left{
+	float: left;
+	-webkit-animation: floatleft 0.5s;
+}
+
+.right{
+	float: right;
+	-webkit-animation: floatright 0.5s;
+}
+
+#ico{
+	width: 100px;
+	height: 100%;
+}
+
+#ico img{
+	width: 50px;
+	height: 62px;
+	margin-top: 10px;
+}
+
+#instagram{
+	width: 60px;
+	height: 100%;
+}
+
+#instagram img{
+	width: 30px;
+	height: 30px;
+	margin-top: 25px;
+}
+
+
+
+.header_index {
+
+	align-content: center;
+	height: 30em;
+	width: 100%;
+	padding-bottom: 3em;
+	background: #000; 
+	display: table;
+}
+
+.header_index h1{
+	font-size: 8em;
+	color: #ffffff;
+	text-shadow:  2px 2px 2px #000;
+	}
+
+
+
+
+.titulo_cabecera img {
+	width: 50%;
+	height: 50%;
+
+}
+.section {
+	background: url('../images/roles.jpg') center no-repeat;
+	height: 30em;
+	
+	width: 100%;	
+
+}
+
+.transparent_text{
+	width: 100%;
+	height: 30em;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	position: relative;
+	transition: background 0.25s;
+
+}
+
+.transparent_text:hover{
+	background-color: rgba(0,0,0,0.6);
+	transition: background 0.25s;
+}
+
+.text{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	font-size: 2em;
+  	color: #fff;
+  	transform: translate(-50%, -50%);
+  	cursor: pointer;
+  	transition-duration: 0.3s;
+}
+
+.text:hover{
+	text-decoration: underline;
+	color: #ddd;
+	text-shadow: 0px 0.5px 1.5px #000;
+	transition-duration: 0.25s;
+}
+
+
+
+article h1 {
+	font-size: 60px;
+}
+
+
+article section{
+	background-color: #DFF4A6;
+	padding: 10px;
+	border-radius: 10px;
+}
+

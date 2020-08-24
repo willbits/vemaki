@@ -1,0 +1,150 @@
+.map{
+	width: 100%;
+	height: 40em;
+	background-color: #fff;
+	padding-top: 10em;
+}
+
+
+#map{
+	width: 80%;
+	height: 25em;
+	margin: auto;
+}
+
+.info_contact{
+	width: 100%;
+	padding: 5%;
+	background-color: #fff;
+	font-size: 1.2em;
+}
+
+.info_contact table{
+	width: 70%;
+	margin: auto;
+}
+
+.info_contact tr{
+	height: 3.5em;
+}
+
+.info_contact .ingresar{
+	width: 85%;
+}
+
+#ingresar{
+	width: 80%;
+	height: 3em;
+	border: none;
+	background-color: #eee;
+}
+
+#message{
+	height: 10em;
+}
+#message1{
+	width: 80%;
+	height: 10em;
+	border: none;
+	background-color: #eee;
+}
+
+.descrip_contact{
+	
+	padding-top: 5%;
+
+}
+
+.logo_contact img{
+	width: 10em;
+}
+
+.left_contact{
+	float: left;
+	padding-left: 15%;
+}
+
+.right_contact{
+	float: right;
+	padding-right: 15%;
+}
+#enter{
+	width: 10%;
+	height: 2.5em;
+	border: none;
+	background-color: #33ccff;
+
+}
+
+@media screen and (max-width: 500px){
+	.map{
+		height: 25em;
+		padding-top: 5em;
+	}
+
+
+	#map{
+		width: 80%;
+		height: 20em;
+	}
+
+	.left{
+		float: none!important;
+	}
+
+	.right{
+		float: none!important;
+	}
+
+	.descrip_contact{
+		display: block!important;
+		width: 100%;
+		
+		margin: auto;
+		padding: 10%;
+		text-align: center;
+	}
+	.logo_contact{
+		display: block!important;
+		width: 100%;
+		height: 15em;
+		padding: 15%;
+	}
+
+	.info_contact{
+		font-size: 1em;
+		
+
+	}
+
+	#respon_contact{
+		height: 27em!important;
+	}
+
+	.logo_contact img{
+		width: 12em;
+		
+		
+	}
+
+	.info_contact table{
+		width: 100%;
+	}
+
+	.info_contact .ingresar{
+		width: 100%!important;
+	}
+
+	#ingresar{
+		width: 100%;
+	}
+
+	#message1{
+		width: 100%;
+	}
+
+	#enter{
+		width: 50%;
+	}
+	
+}

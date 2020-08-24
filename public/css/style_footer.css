@@ -1,0 +1,44 @@
+footer{
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	margin-top: 3em;
+	width: 81%;
+
+	height: 28em;
+	
+}
+
+.section_footer{
+	float: left;
+	width: 33%;
+	display: inline-block;
+	height: 28em;
+	
+
+
+}
+
+.instagram{
+	width: 100%;
+	height: 28em;
+
+}
+
+.instagram-media{
+	height: 27em;
+}
+
+.select_footer{
+	height: 3em;
+	width: 50%;
+	line-height: 2em;
+	display: block;
+	margin-top: 1em;
+}
+
+.select_footer a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.8em;
+}

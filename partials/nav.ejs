@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vemaki></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link  rel = "shortcut icon"  href = "images/favicon.ico"  type = "image / x-icon" > 
+	<link  rel = "icono"  href = "images/favicon.ico"  type = "image / x-icon" >
+	<script type="text/javascript" src="script.js"></script>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("deslizar").className = "cambiar_nav";	
+
+    } else {
+        document.getElementById("deslizar").className = "nav_cambiar";
+    	}
+	}
+	</script>
+	
+</head>
+<body>
+	
+	
+	<nav id="deslizar" class="nav">
+			<div class="left" id="ico"><a href="/"><img src="images/vemaki_white.png"></a></div>
+			<div class="left"><a href="nosotros">About Us</a></div>
+			<div class="left"><a href="oferta">¡Compra ahora!</a></div>
+			<div class="right" id="instagram"><a href="https://www.instagram.com/vemaki/" target="blank"><img src="images/instagram.png"></a></div>
+			<div class="right"><a href="contact">Contactanos</a></div>
+
+	</nav>
+	

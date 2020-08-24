@@ -1,0 +1,68 @@
+<%- include ('../partials/nav')%>
+
+<header class="map">
+	<div id="map"></div>
+</header>
+<section class="contact">
+	<div class="info_contact" id="respon_contact" style="height: 20em;">
+		<div class="logo_contact left_contact">
+			<img src="images/ubicacion.svg">
+		</div>
+		<div class="descrip_contact right_contact">
+			<h3>Dirección</h3><br/>
+			<p>Fray Servando Teresa De Mier 979 Jardin Balbuena, Ciudad De México</p>
+		</div>
+		
+	</div>
+	<div class="info_contact" id="respon_contact" style="background-color: #33ccff; height: 20em;">
+		<div class="descrip_contact left_contact">
+			<h3>Teléfono</h3><br/>
+			<p>Puedes comunicarte con nostros para cualquier infomacion:</p>
+			<p>443-00-00</p>
+		</div>
+		<div class="logo_contact right">
+			<img src="images/telefono.svg">
+		</div>
+		
+	</div>
+	<div class="info_contact">
+		<form id="busqueda" method="post">
+			<table>
+				<tr>
+					<td>Nombre</td>
+					<td class="ingresar"><input id="ingresar" type="text" name="nombre" value=""></td>
+				</tr>
+				<tr>
+					<td>Apellido</td>
+					<td class="ingresar"><input id="ingresar" type="text" name="apellido" value=""></td>
+				</tr>
+				<tr>
+					<td>Correo</td>
+					<td class="ingresar"><input id="ingresar" type="text" name="apellido" value=""></td>
+				</tr>
+				<tr>
+					<td>Asunto</td>
+					<td class="ingresar"><input id="ingresar" type="text" name="apellido" value=""></td>
+				</tr>
+				<tr id="message">
+					<td>Mensaje</td>
+					<td class="ingresar"><textarea id="message1" type="text" name="biografia" ></textarea></td>
+				</tr>
+			</table>   
+			  
+			  
+			  
+			 <br/>
+			<center>
+				<input type="submit" id="enter" value="Enviar">	
+			</center>			
+			
+		</form>
+		
+	</div>
+</section>
+<section class="mail">
+	
+</section>
+
+<%- include ('../partials/footer')%>
