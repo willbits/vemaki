@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 
 //settings
-
+app.set('port', process.env.PORT || 3000);
 app.set('appName', 'Mi primer servidor');
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
@@ -19,12 +19,12 @@ app.use(morgan('combined'));
 
 //static files
 
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'pub')));
 
 //rutas
 
 app.get('/', (req, res) =>{
-	res.render('index.ejs');
+	res.render('index');
 });
 
 app.get('/contact', (req, res) =>{
@@ -35,7 +35,7 @@ app.get('*', (req, res) =>{
 	res.end('Archivo no encontrado!');
 });
 
-app.listen(3000, () =>{
-	console.log('servidor funcionando');
+app.listen(app.get('port'), () =>{
+	console.log('servidor funcionando', app.get('port'));
 	console.log('Nombre de la App: ', app.get('appName'));
 });
